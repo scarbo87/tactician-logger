@@ -4,6 +4,7 @@ namespace League\Tactician\Logger\Formatter;
 use Exception;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
+use Throwable;
 
 /**
  * Returns log messages only dump the Command & Exception's class names.
@@ -59,7 +60,7 @@ class ClassNameFormatter implements Formatter
     /**
      * {@inheritDoc}
      */
-    public function logCommandFailed(LoggerInterface $logger, $command, Exception $e)
+    public function logCommandFailed(LoggerInterface $logger, $command, Throwable $e)
     {
         $logger->log(
             $this->commandFailedLevel,

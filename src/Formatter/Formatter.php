@@ -1,7 +1,7 @@
 <?php
 namespace League\Tactician\Logger\Formatter;
 
-use Exception;
+use Throwable;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -39,8 +39,8 @@ interface Formatter
     /**
      * @param LoggerInterface $logger
      * @param object $command
-     * @param Exception $e
+     * @param Throwable $e
      * @return void
      */
-    public function logCommandFailed(LoggerInterface $logger, $command, Exception $e);
+    public function logCommandFailed(LoggerInterface $logger, $command, Throwable $e);
 }

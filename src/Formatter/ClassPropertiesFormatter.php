@@ -6,6 +6,7 @@ use League\Tactician\Logger\PropertyNormalizer\SimplePropertyNormalizer;
 use Exception;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
+use Throwable;
 
 /**
  * Formatter that includes the Command's name and properties for more detail
@@ -80,7 +81,7 @@ class ClassPropertiesFormatter implements Formatter
     /**
      * {@inheritDoc}
      */
-    public function logCommandFailed(LoggerInterface $logger, $command, Exception $e)
+    public function logCommandFailed(LoggerInterface $logger, $command, Throwable $e)
     {
         $logger->log(
             $this->commandFailedLevel,

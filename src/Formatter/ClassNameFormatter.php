@@ -1,7 +1,6 @@
 <?php
 namespace League\Tactician\Logger\Formatter;
 
-use Exception;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
 use Throwable;

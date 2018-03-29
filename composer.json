@@ -1,12 +1,12 @@
 {
-    "name": "league/tactician-logger",
+    "name": "scarbo87/tactician-logger",
     "description": "Adds PSR-3 logging support to the Tactician command bus",
     "keywords": [
         "tactician",
         "log",
         "logging"
     ],
-    "homepage": "https://github.com/thephpleague/tactician-logger",
+    "homepage": "https://github.com/scarbo87/tactician-logger",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php" : ">=5.5.0",
+        "php" : ">=7.1",
         "psr/log": "~1.0",
         "league/tactician": "^1.0"
     },
